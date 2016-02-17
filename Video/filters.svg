@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+ <filter id="grayscale">
+  <feColorMatrix type="matrix" values="0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0"/>
+        <animate attributeName="intercept" attributeType="XML" 
+            begin="0s" dur="4s" repeatCount="indefinite" 
+            values="-1;1;-1"/>
+ </filter>
+</svg>
