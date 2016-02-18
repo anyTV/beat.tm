@@ -269,7 +269,7 @@
 			<div class="row" style="padding-bottom: 40px; background-color: #000;">
 				<div class="col-md-12 text-center padding-top48 text-footer">
 					<img src="images/logo/logo.png" alt="Footer logo">
-					<p class="padding-top12"><i class="fa-copyright fa"></i> <span translate="all_rights_reserved">any.TV Limited 2015 All Rights Reserved</span></p>
+					<p class="padding-top12"><i class="fa-copyright fa"></i><span>any.TV&nbsp;</span><span class="year"></span><span>&nbsp;</span><span translate="all_rights_reserved"></span></p>
 					<div class="text-center padding-top72">
 						<a href="#" class="scroll-to relative">
 							<img class="footer-arrow-up" src="images/footer/arrowup_w.png" alt="" />
@@ -295,6 +295,7 @@
 
 
 	<script>
+		$('.year').html(new Date().getFullYear());
       // 1. This code loads the IFrame Player API code asynchronously.
       var tag = document.createElement('script');
 
