@@ -36,10 +36,8 @@
                     <li><a href='http://www.beat.tm/Video/' translate="video_creator">VIDEO CREATOR</a></li>
                     <li><a href='http://www.beat.tm/Music/' translate="music_creator">MUSIC CREATOR</a></li>
                     <li><a>Language</a>
-					   <ul>
-					      <li><a ng-click="changeLanguage('en_US')">ENGLISH</a></li>
-					      <li><a ng-click="changeLanguage('zh')">CHINESE</a></li>
-                          <li><a ng-click="changeLanguage('pt_PT')">PORTUGESE</a></li>
+					    <ul>
+					       <li ng-repeat="lang in languages"><a ng-click="changeLanguage(lang.key)" ng-bind="lang.text"></a></li>
 					   </ul>
 					</li>
                     <li><a href='http://www.beat.tm/faq.html'>FAQ</a></li>
@@ -81,10 +79,16 @@
 				</div>
 				<div class="col-md-3 landa">
 				</div>
+                <div class="col-md-3"></div>
+                <div class="col-md-6 lang-container">
+                    <ul class="language">
+                        <li ng-repeat="lang in languages" ><a ng-click="changeLanguage(lang.key)" ng-bind="lang.text"></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3"></div>
 			</div>
 		</div>
 	</div>
-
 
 </body>
 <footer>
