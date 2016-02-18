@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 
-<html>
+<html ng-app="beat" ng-controller="homeController">
 <head>
 
 	<title>Beat - The Digital Music Label for All Artists</title>
@@ -55,6 +55,13 @@
 					<li><a href='#services'>SERVICES</a></li>
 					<li><a href='#teams'>APPLY</a></li>
 					<li><a href='#'>LIVE</a></li>
+                    <li><a>LANGUAGE</a>
+					   <ul>
+					      <li><a ng-click="changeLanguage('en_US')">ENGLISH</a></li>
+					      <li><a ng-click="changeLanguage('zh')">CHINESE</a></li>
+                          <li><a ng-click="changeLanguage('pt_PT')">PORTUGESE</a></li>
+					   </ul>
+					</li>
 					<li><a href='http://submit.beat.tm'>SUBMIT</a></li>
 					<li><a href='#contact'>CONTACT US</a></li>
 					<li style="height: 48px;"><a href="#" class="search-button-trigger left-search-btn"><i class="fa fa-search centered-icon"></i></a></li>
@@ -76,7 +83,7 @@
 		<section>
 		    <div class="full-width-container responsive-static-img">
 				<div class="responsive-theme-title">
-					<h1 class="bigH1">BEAT</h1>
+					<h1 class="bigH1">BEAT <span translate="which_one_are_you"></span></h1>
 					<h6>THE BEST DIGITAL DISTRIBUTION SERVICE FOR MUSIC ARTISTS</h6>
 					<div class="text-center padding-top36 responsive-arrow">
 						<a href='#features' class="scroll-to1 relative">
@@ -317,6 +324,11 @@
 
 	<!-- JS for isotope -->
     <script src="isotope/isotope.pkgd.min.js"></script>
+
+    <script type="text/javascript" src="/bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="/bower_components/angular-translate/angular-translate.min.js"></script>
+    <script type="text/javascript" src="/bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
+    <script type="text/javascript" src="/js/app.js"></script>
 
 
 	</body>

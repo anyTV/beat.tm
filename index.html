@@ -1,20 +1,20 @@
 <!DOCTYPE HTML>
 
-<html>
+<html ng-app="beat" ng-controller="homeController">
 <head>
 
 <title>Beat - The Digital Music Label for All Creators</title>
 
-<link rel="icon" type="image/png" href="images/favicon.ico"> <!-- Favicon -->	
+<link rel="icon" type="image/png" href="images/favicon.ico"> <!-- Favicon -->
 
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-	<meta name="viewport" content="width=device-width, user-scalable=1.0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">  
-	<meta name="apple-mobile-web-app-capable" content="yes"> 
+	<meta name="viewport" content="width=device-width, user-scalable=1.0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="format-detection" content="telephone=no"> <!--For other devices -->
 
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'> <!-- Font --><!-- Map -->
-	
+
 	<!-- Bootstrap CSS Files -->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 
@@ -25,7 +25,7 @@
 	<style>body {
     background-color: #2b2b2b;
 }</style>
-<div class="full-width-container navcssmenu-cont">  
+<div class="full-width-container navcssmenu-cont">
             <div class="container no-pad-lr nav-cssmenu">
                 <nav id="cssmenu">
                     <div class="logo"><a class="logo-a" href=""><img src="http://www.beat.tm/Video/images/logo/logo.png" alt="Logo Header"></a></div>
@@ -35,10 +35,11 @@
                     <li><a href='http://www.beat.tm'>HOME</a></li>
                     <li><a href='http://www.beat.tm/Video/'>VIDEO CREATOR</a></li>
                     <li><a href='http://www.beat.tm/Music/'>MUSIC CREATOR</a></li>
-                    <li><a>Language</a>
+                    <li><a>LANGUAGE</a>
 					   <ul>
-					      <li><a href='https://www.beat.tm'>ENGLISH</a></li>
-					      <li><a href='https://www.beat.tm/ch.html'>CHINESE</a></li>
+					      <li><a ng-click="changeLanguage('en_US')">ENGLISH</a></li>
+					      <li><a ng-click="changeLanguage('zh')">CHINESE</a></li>
+                          <li><a ng-click="changeLanguage('pt_PT')">PORTUGESE</a></li>
 					   </ul>
 					</li>
                     <li><a href='http://submit.beat.tm'>SUBMIT</a></li>
@@ -57,7 +58,7 @@
 	<div class="no-pad-lr landing-bg text-center">
 		<div style="z-index: 0"><img src="images/logo/logo.png"></div>
 		<div class="blue-horizontal-separator smaller-separator"></div>
-		<div class="text-block padding-top12"><img src="images/which.png"></div>
+		<div class="text-block padding-top12">TESt<span translate="which_one_are_you"></span><img src="images/which.png"></div>
 		<div class="row margin-top60 land-items">
 			<div class="container-fluid" style="background: transparent;">
 				<div class="col-md-3 landa">
@@ -65,7 +66,7 @@
 				<div class="col-md-3 landa">
 					<div class="land-item"><a href="Video/"><img src="images/playButton.png"></a></div>
 					<div class="landing-text padding-top24 padding-bottom24">
-						<span class="first-lland">I AM A</span><span class="second-lland"> VIDEO</span><span class="first-lland"> CREATOR</span>
+						<span class="first-lland">I AM A</span><span class="second-lland"> VIDEO</span><span class="first-lland" translate=> CREATOR</span>
 					</div>
 					<a href="Video/"><button class="button-light">ENTER</button></a>
 				</div>
@@ -87,6 +88,13 @@
 <footer>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script>
+<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+<script type="text/javascript" src="bower_components/angular-translate/angular-translate.min.js"></script>
+<script type="text/javascript" src="bower_components/angular-cookies/angular-cookies.min.js"></script>
+<script type="text/javascript" src="bower_components/angular-translate-storage-local/angular-translate-storage-local.min.js"></script>
+<script type="text/javascript" src="bower_components/angular-translate-storage-cookie/angular-translate-storage-cookie.min.js"></script>
+<script type="text/javascript" src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
 <script>
 jQuery(function(){
     jQuery(".player").mb_YTPlayer();
