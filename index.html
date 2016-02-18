@@ -32,19 +32,17 @@
                     <div id="head-mobile"></div>
                     <div class="btn-menu"></div>
                     <ul class="float-right">
-                    <li><a href='http://www.beat.tm'>HOME</a></li>
-                    <li><a href='http://www.beat.tm/Video/'>VIDEO CREATOR</a></li>
-                    <li><a href='http://www.beat.tm/Music/'>MUSIC CREATOR</a></li>
-                    <li><a>LANGUAGE</a>
+                    <li><a href='http://www.beat.tm' translate="home">HOME</a></li>
+                    <li><a href='http://www.beat.tm/Video/' translate="video_creator">VIDEO CREATOR</a></li>
+                    <li><a href='http://www.beat.tm/Music/' translate="music_creator">MUSIC CREATOR</a></li>
+                    <li><a>Language</a>
 					   <ul>
 					      <li><a ng-click="changeLanguage('en_US')">ENGLISH</a></li>
 					      <li><a ng-click="changeLanguage('zh')">CHINESE</a></li>
                           <li><a ng-click="changeLanguage('pt_PT')">PORTUGESE</a></li>
 					   </ul>
 					</li>
-                    <li><a href='http://submit.beat.tm'>SUBMIT</a></li>
                     <li><a href='http://www.beat.tm/faq.html'>FAQ</a></li>
-                    <li><a href='http://www.beat.tm#contact'>CONTACT US</a></li>
                     </ul>
                 </nav>
             </div>
@@ -58,7 +56,9 @@
 	<div class="no-pad-lr landing-bg text-center">
 		<div style="z-index: 0"><img src="images/logo/logo.png"></div>
 		<div class="blue-horizontal-separator smaller-separator"></div>
-		<div class="text-block padding-top12">TESt<span translate="which_one_are_you"></span><img src="images/which.png"></div>
+		<div class="text-block padding-top12">
+            <h2 translate="which_one_are_you"></h2>
+        </div>
 		<div class="row margin-top60 land-items">
 			<div class="container-fluid" style="background: transparent;">
 				<div class="col-md-3 landa">
@@ -66,16 +66,18 @@
 				<div class="col-md-3 landa">
 					<div class="land-item"><a href="Video/"><img src="images/playButton.png"></a></div>
 					<div class="landing-text padding-top24 padding-bottom24">
-						<span class="first-lland">I AM A</span><span class="second-lland"> VIDEO</span><span class="first-lland" translate=> CREATOR</span>
+                        <span class="first-lland" translate="i_am_video_creator">
+                        </span>
+                    </div>
+                    <a href="Video/"><button class="button-light" translate="enter"></button></a>
+                </div>
+                <div class="col-md-3 landa">
+                    <div class="land-item"><a href="Music/"><img src="images/headphones.png"></a></div>
+                    <div class="landing-text padding-top24 padding-bottom24">
+                        <span class="first-lland" translate="i_am_music_creator">
+                        </span>
 					</div>
-					<a href="Video/"><button class="button-light">ENTER</button></a>
-				</div>
-				<div class="col-md-3 landa">
-					<div class="land-item"><a href="Music/"><img src="images/headphones.png"></a></div>
-					<div class="landing-text padding-top24 padding-bottom24">
-						<span class="first-dland">I AM A</span><span class="second-dland"> MUSIC</span><span class="first-dland"> CREATOR</span>
-					</div>
-					<a href="Music/"><button class="button-dark">ENTER</button></a>
+					<a href="Music/"><button class="button-dark" translate="enter"></button></a>
 				</div>
 				<div class="col-md-3 landa">
 				</div>
