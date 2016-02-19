@@ -79,13 +79,15 @@
 				</div>
 				<div class="col-md-3 landa">
 				</div>
-                <div class="col-md-3"></div>
-                <div class="col-md-6 lang-container">
-                    <ul class="language">
-                        <li ng-repeat="lang in languages" ><a ng-click="changeLanguage(lang.key)" ng-bind="lang.text"></a></li>
-                    </ul>
+                <div class="row">
+                    <!-- <div class="col-md-2"></div> -->
+                    <div class="col-md-12 lang-container">
+                        <ul class="language">
+                            <li ng-repeat="lang in languages" ><a ng-click="changeLanguage(lang.key)" ng-bind="lang.text"></a></li>
+                        </ul>
+                    </div>
+                    <!-- <div class="col-md-2"></div> -->
                 </div>
-                <div class="col-md-3"></div>
 			</div>
 		</div>
 	</div>
